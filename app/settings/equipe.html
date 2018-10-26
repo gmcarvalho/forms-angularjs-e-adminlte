@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-12">
+      <button type="submit" class="btn btn-success btn-view-posicao">Novo usuário</button>
+      <button type="submit" class="btn btn-usuarios">Usuários</button>
+      <button type="submit" class="btn btn-freelas">Freelas</button> 
+  </div>
+    
+  <div class="col-md-3" ng-repeat="usuario in vm.usuarios">
+    <div class="box box-widget widget-user">
+      <div class="widget-user-header bg-box-profile">
+      </div>
+      <div class="widget-user-image">
+        <img class="img-circle" src="{{usuario.image}}" alt="User Avatar">
+      </div>
+      <div class="box-footer bg-box-profile">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p>{{usuario.nome}}</p>
+            <p>{{usuario.email}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
